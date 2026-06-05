@@ -2,9 +2,15 @@
 name = "deltav"
 version = "0.0.0"
 description = "DeltaV reservation-based budget enforcement for agent and tool runs."
+readme = "README.md"
 requires-python = ">=3.11"
 license = { text = "MIT" }
 dependencies = ["psycopg[binary]>=3.2", "psycopg-pool>=3.2"]
+
+[project.urls]
+Homepage = "https://github.com/cachetronaut/deltav"
+Repository = "https://github.com/cachetronaut/deltav"
+Issues = "https://github.com/cachetronaut/deltav/issues"
 
 [build-system]
 requires = ["hatchling"]
