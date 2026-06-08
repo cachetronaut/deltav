@@ -16,6 +16,7 @@ name = "deltav"
 version = "0.0.0"
 source = { editable = "." }
 dependencies = [
+    { name = "dockbay" },
     { name = "psycopg", extra = ["binary"] },
     { name = "psycopg-pool" },
 ]
@@ -30,6 +31,7 @@ dev = [
 
 [package.metadata]
 requires-dist = [
+    { name = "dockbay", specifier = ">=0.0.0" },
     { name = "psycopg", extras = ["binary"], specifier = ">=3.2" },
     { name = "psycopg-pool", specifier = ">=3.2" },
 ]
@@ -40,6 +42,19 @@ dev = [
     { name = "pytest-asyncio", specifier = ">=0.23" },
     { name = "ruff", specifier = ">=0.6" },
     { name = "ty", specifier = ">=0.0.1a8" },
+]
+
+[[package]]
+name = "dockbay"
+version = "0.0.0"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "psycopg", extra = ["binary"] },
+    { name = "psycopg-pool" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/15/7c/1004de2dee6476d2c74d290c3586f7d28265727148ba10f8fd0b2613495a/dockbay-0.0.0.tar.gz", hash = "sha256:cf2374b390128d16fda5ba3429ef6f9f12e60fe445fc418dffd8991f4f8dc8f1", size = 17481, upload-time = "2026-06-05T21:12:51.905Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/a1/6e/701815206658937e75462a022f3a5a230e81c4ece37c326526913f7bead0/dockbay-0.0.0-py3-none-any.whl", hash = "sha256:23f666d8117035e03cb0e95dac399ade34b8c57bc607af8a6d88a015f3ca55da", size = 4659, upload-time = "2026-06-05T21:12:50.608Z" },
 ]
 
 [[package]]

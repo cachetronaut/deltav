@@ -5,7 +5,7 @@ description = "DeltaV reservation-based budget enforcement for agent and tool ru
 readme = "README.md"
 requires-python = ">=3.11"
 license = { text = "MIT" }
-dependencies = ["psycopg[binary]>=3.2", "psycopg-pool>=3.2"]
+dependencies = ["dockbay>=0.0.0", "psycopg[binary]>=3.2", "psycopg-pool>=3.2"]
 
 [project.urls]
 Homepage = "https://github.com/cachetronaut/deltav"
@@ -30,7 +30,7 @@ target-version = "py311"
 select = ["E", "F", "I", "UP", "B", "SIM"]
 
 [tool.pytest.ini_options]
-pythonpath = ["src", "../../dockbay/py/src"]
+pythonpath = ["src"]
 
 [tool.ty.environment]
-extra-paths = ["src", "../../dockbay/py/src"]
+extra-paths = ["src"]
